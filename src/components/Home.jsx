@@ -1,4 +1,4 @@
-import DryFruitsLogo from "../img/dryfruits-logo1.png+";
+import DryFruitsLogo from "../img/dryfruits-logo1.png";
 import BannerImg from '../img/mix-dry-fruits1.png'
 import Products from "./Products";
 import ProductData from "./ProductData";

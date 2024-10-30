@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import Logo from "../img/logo.png";
 import { useContext, useEffect, useState } from "react";
 import { FirebaseContext } from "../context/Firebase";
 import Popup from "./Popup";
