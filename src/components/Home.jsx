@@ -1,4 +1,5 @@
-import DryFruitsLogo from "../assets/dryfruits-logo1.png";
+import DryFruitsLogo from "./images/dryfruits-logo1.png";
+import BannerImg from './images/mix-dry-fruits1.png'
 import Products from "./Products";
 import ProductData from "./ProductData";
 import { Link } from "react-router-dom";
@@ -67,7 +68,7 @@ export default function Home() {
               <img
                 className="user-drag relative z-10 mt-5 w-64"
                 draggable="false"
-                src="./src/assets/mix-dry-fruits1.png"
+                src={BannerImg}
                 alt="mix fruits"
               />
               <div className="absolute left-6 top-20 h-60 w-40 bg-orange-600 blur-3xl lg:w-56"></div>
