@@ -46,7 +46,7 @@ export default function Home() {
             {/* heroImg section */}
 
             <div>
-              <img draggable="false" src={DryFruitsLogo} alt="" />
+              <img draggable="false" src='./images/dryfruits-logo1.png' alt="" />
             </div>
           </div>
         </section>
@@ -68,7 +68,7 @@ export default function Home() {
               <img
                 className="user-drag relative z-10 mt-5 w-64"
                 draggable="false"
-                src={BannerImg}
+                src='./images/mix-dry-fruits1.png'
                 alt="mix fruits"
               />
               <div className="absolute left-6 top-20 h-60 w-40 bg-orange-600 blur-3xl lg:w-56"></div>
