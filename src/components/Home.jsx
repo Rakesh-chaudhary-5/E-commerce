@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Home() {
-
+  
   const cartProduct = JSON.parse(localStorage.getItem("cartProduct")) || [];
   const amountDetails = JSON.parse(localStorage.getItem("amountDetails")) || {
     subTotal: 0,
