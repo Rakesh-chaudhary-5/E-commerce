@@ -87,7 +87,7 @@ export default function ProductDetail() {
       <div className="max-w-[600px] flex flex-col gap-4">
       <h1 className="text-3xl font-bold">{Product.name}</h1>
       <p className='text-[#7D7C7C] font-semibold text-lg'><span className='text-[#FFA500] font-bold'>&#8377;</span>{Product.price} kg</p>
-      <p className="text-[#a5a5a5] leading-8 max-w-[500px]">Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge</p>
+      <p className="text-[#a5a5a5] leading-8 max-w-[500px]">{Product.description}</p>
     
     <label htmlFor="" className="font-semibold text-xl">Amount</label>
       
