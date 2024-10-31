@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
 export default function Products({allData}) {
+  if(allData.length == 0){
+    return <div className="text-3xl font-semibold mt-20 ">Sorry, Product is not available.</div>
+  }
   return (
     <div className='mt-20 flex flex-wrap max-md:justify-center gap-20'>
     {
