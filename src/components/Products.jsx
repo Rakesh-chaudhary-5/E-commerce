@@ -9,7 +9,7 @@ export default function Products({allData}) {
     {
         allData.map((e)=>(
                 // card
-           <Link to={'../productDetail'} state={e} key={crypto.randomUUID()}>
+           <Link to={'../productDetail'}  draggable={'false'} state={e} key={crypto.randomUUID()}>
             <div className='rounded-xl overflow-hidden mx-w-[300px] sm:w-[400px] md:w-[250px] bg-[#121212]' >
                 {/* Images  */}
              <img className='m-auto rounded-xl' draggable='false' src={e.img} alt="dates" />

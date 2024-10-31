@@ -75,7 +75,7 @@ export default function CartProduct({ setData, cartProduct, setCartProduct }) {
           key={crypto.randomUUID()}
         >
           <div className="max-w-80 md:w-60">
-            <img className="w-full rounded-xl" src={e.img} alt="" />
+            <img className="w-full rounded-xl"  draggable={'false'} src={e.img} alt="" />
           </div>
 
           {/* subsection */}

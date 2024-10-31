@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className=' bg-[#121212]'>
     <div className=' grid h-auto md:h-28 gap-x-10 gap-y-6 grid-cols-[100px_full] md:flex md:justify-between md:gap-8 items-center py-4 px-4 sm:px-10 lg:px-16 max-w-[1400px] m-auto'>
     
-      <Link to={'/'}><img className='w-16 md:w-20 place-self-center cursor-pointer' src={Logo} alt="cart-logo" /></Link>
+      <Link draggable={'false'} to={'/'}><img className='w-16 md:w-20 place-self-center cursor-pointer'  draggable={'false'} src={Logo} alt="cart-logo" /></Link>
 
       <p className='text-white max-w-96 text-xl'><span className='text-orange-500 font-semibold '>Our vision</span> is to provide best Quality product and 
         make users <span className='text-orange-500 font-semibold '>best experience.</span></p>

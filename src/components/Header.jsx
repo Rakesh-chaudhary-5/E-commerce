@@ -39,7 +39,7 @@ export default function Header({ productCount,setOpenMenu,isLoginSuccess,setIsLo
       <section className="m-auto flex max-w-[1400px] items-center justify-between px-8 py-4 sm:px-16">
 
         <div className="flex items-center gap-4 text-white">
-         <NavLink to={'/'}><img className="w-10 cursor-pointer" src={Logo} alt="" /></NavLink>
+         <NavLink  draggable={'false'} to={'/'}><img className="w-10 cursor-pointer"  draggable={'false'} src={Logo} alt="" /></NavLink>
           <i className="fa-solid fa-bars block text-xl md:hidden cursor-pointer" onClick={(e)=>{
             e.stopPropagation()
              setMenuOpen(true)
@@ -114,7 +114,7 @@ export default function Header({ productCount,setOpenMenu,isLoginSuccess,setIsLo
        }
 
         <div className="flex items-center gap-8 text-white">
-          <NavLink to={"/cart"} className="relative">
+          <NavLink  draggable={'false'} to={"/cart"} className="relative">
             <i className="fa-solid fa-cart-shopping cursor-pointer text-xl"></i>
             <div className="absolute -right-4 -top-1 rounded-full bg-[#FF9800] px-2 text-[11px] font-semibold">
               {productCount}
@@ -123,7 +123,7 @@ export default function Header({ productCount,setOpenMenu,isLoginSuccess,setIsLo
 
           {
             isLogin
-            ? <i className="fa-solid fa-user cursor-pointer text-xl" onClick={(e)=>{
+            ? <i  draggable={'false'} className="fa-solid fa-user cursor-pointer text-xl" onClick={(e)=>{
                e.stopPropagation()
                setUserProfile(true)
               }}></i>

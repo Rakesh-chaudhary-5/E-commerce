@@ -80,7 +80,7 @@ export default function ProductDetail() {
       <div className="flex flex-col lg:flex-row gap-8 justify-between mt-10">
     {/* img */}
       <div className="max-w-[600px]">
-        <img className="rounded-xl" src={Product.img} alt="" />
+        <img  draggable={'false'} className="rounded-xl" src={Product.img} alt="" />
       </div>
 
     {/* detail */}
