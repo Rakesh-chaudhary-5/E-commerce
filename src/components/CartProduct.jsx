@@ -77,7 +77,6 @@ export default function CartProduct({ setData, cartProduct, setCartProduct }) {
           <div className="max-w-80 md:w-60">
             <img className="w-full rounded-xl"  draggable={'false'} src={e.img} alt="" />
           </div>
-
           {/* subsection */}
           <div className="flex w-full flex-col justify-between gap-4 md:flex-row ">
             <h1 className="w-40 text-xl font-semibold">{e.name}</h1>

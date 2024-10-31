@@ -45,7 +45,6 @@ export default function ProductPage() {
         setProductsIndex(0)
       }
 
-
   return (
     <main className="bg-[#0c0c0c] pb-28  min-h-screen">
       <div className="p-10 max-w-[1400px] m-auto relative">
@@ -56,7 +55,7 @@ export default function ProductPage() {
           {/* search input*/}
           <div className="bg-[#0c0c0c] w-[400px] flex-grow flex overflow-hidden items-center text-white h-16 px-4 sm:px-10 rounded-lg">
             <input className="bg-inherit block text-[#FF9800] font-semibold outline-none h-full placeholder:text-white w-full" placeholder="Search Product" value={inputValue} type="text" onChange={(e)=> setInputValue(e.target.value)} />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
           </div>
 
          <form action="" onSubmit={(e)=>{
@@ -110,7 +109,7 @@ export default function ProductPage() {
 </div>
          </form>
         </div>
-
+              
         {/* product style menu */}
         <div className='text-white text-lg font-semibold flex justify-between mt-20 py-4 border-b-2 border-[#FF9800]'>
           <p className=''>{filterProduct.length} products</p>
