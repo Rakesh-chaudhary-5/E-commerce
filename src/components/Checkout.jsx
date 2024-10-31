@@ -39,8 +39,6 @@ export default function Checkout() {
   
   const formattedTime = `${String(hours).padStart(2, '0')}:${minutes} ${ampm} - ${month} ${date}th,${year}`;
 
-  console.log(isOrderPlaced);
-  console.log(userIsLogin);
   //  place order clicked
   const placeOrder = ()=>{      
     if(userInfo.name && userInfo.address && userIsLogin)
@@ -75,10 +73,9 @@ export default function Checkout() {
         setIsOrderPlaced(true)
     }
     else{
-      setIsOrderPlaced(true)
+      if(!userIsLogin) setIsOrderPlaced(true)
       setError((prv)=>({...prv,name: userInfo.name ? true : false,address: userInfo.address ? true : false}))
     }
-
     return false
   }
 
@@ -86,12 +83,11 @@ export default function Checkout() {
     localStorage.setItem('order',JSON.stringify(order)) //set order
   },[order])
 
-
   // Handle navigation after order is placed
   useEffect(() => {
     setIsOrderPlaced(false)
 
-    if (isOrderPlaced && userIsLogin) {
+    if (isOrderPlaced & userIsLogin) {
       setTimeout(()=>{
         navigate('/orders');
       },0) // Only navigate after order is placed 

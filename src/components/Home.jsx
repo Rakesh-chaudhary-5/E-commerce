@@ -37,7 +37,7 @@ export default function Home() {
                 support.
               </p>
               <Link to={"/products"}>
-                <button className="rounded-lg bg-[#F8230E] px-4 py-2 font-semibold">
+                <button className="rounded-lg bg-[#F8230E] px-4 py-2 font-semibold scale-100 hover:scale-110 transition-all duration-200">
                   Our Products
                 </button>
               </Link>
@@ -86,7 +86,7 @@ export default function Home() {
                 support
               </p>
               <Link to={"/products"}>
-                <button className="mt-8 rounded-xl bg-orange-700 px-4 py-2 text-sm font-semibold">
+                <button className="mt-8 rounded-xl bg-orange-700 px-4 py-2 text-sm font-semibold scale-100 hover:scale-110 transition-all duration-200">
                   Purchase Now
                 </button>
               </Link>

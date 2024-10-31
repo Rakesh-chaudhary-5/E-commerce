@@ -26,7 +26,7 @@ export default function OrderMenu({data,btn,placeOrder}) {
         </div>
      </div>
 
-     <button className="bg-[#FF9800] w-full p-2 rounded-md" onClick={placeOrder}>{btn}</button>
+     <button className="bg-[#FF9800] w-full p-2 rounded-md hover:bg-[#F8230E] transition-all duration-200" onClick={placeOrder}>{btn}</button>
    </div>
     </>
   )

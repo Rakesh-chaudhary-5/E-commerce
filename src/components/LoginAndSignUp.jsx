@@ -61,7 +61,6 @@ export default function LoginAndSignUp({productCount}) {
   }else{
     document.body.classList.remove('overflow-y-hidden');
   }
-  console.log(loginOrSingUp);
  
   return(
     <>
