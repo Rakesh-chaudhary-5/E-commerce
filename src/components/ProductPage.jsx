@@ -5,7 +5,6 @@ import ProductData from './ProductData';
 
 export default function ProductPage() {
   const [value, setValue] = useState(100); // Default slider value
-  const [menuStyle,setMenuStyle] = useState(true)
   const [inputValue,setInputValue] = useState('') // Input value
   const [sortProduct,setSortProduct] = useState(() => (a, b) => 0)
   const [productName,setProductName] = useState('') // selected product name7
@@ -55,8 +54,9 @@ export default function ProductPage() {
         <div className="bg-[#181920] p-5 gap-6 text-white rounded-lg flex-wrap  flex justify-between px-5 sm:px-10">
 
           {/* search input*/}
-          <div className="bg-[#0c0c0c] w-[400px] flex-grow flex overflow-hidden items-center text-white h-16 pl-10 rounded-lg">
+          <div className="bg-[#0c0c0c] w-[400px] flex-grow flex overflow-hidden items-center text-white h-16 px-4 sm:px-10 rounded-lg">
             <input className="bg-inherit block text-[#FF9800] font-semibold outline-none h-full placeholder:text-white w-full" placeholder="Search Product" value={inputValue} type="text" onChange={(e)=> setInputValue(e.target.value)} />
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
 
          <form action="" onSubmit={(e)=>{
@@ -115,8 +115,7 @@ export default function ProductPage() {
         <div className='text-white text-lg font-semibold flex justify-between mt-20 py-4 border-b-2 border-[#FF9800]'>
           <p className=''>{filterProduct.length} products</p>
           <div className='flex gap-4 items-center'>
-          <div className={`flex bg-[${menuStyle?'#FF9800':''}] w-9 h-9 justify-center items-center rounded-full`} onClick={()=> setMenuStyle(true)}><svg stroke="currentColor" className='w-7 h-6 ' fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"></path></svg></div>
-          <i className={`bg-[${menuStyle?'':'#FF9800'}] fa-solid fa-bars text-xl cursor-pointer w-9 h-9 flex items-center justify-center rounded-full`} onClick={()=> setMenuStyle(false)}></i>
+          <div className='flex bg-[#FF9800] w-9 h-9 justify-center items-center rounded-full'><svg stroke="currentColor" className='w-7 h-6 ' fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"></path></svg></div>
           </div>
           </div>
 
