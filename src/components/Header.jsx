@@ -39,7 +39,7 @@ export default function Header({ productCount,setOpenMenu,isLoginSuccess,setIsLo
       <section className="m-auto flex max-w-[1400px] items-center justify-between px-8 py-4 sm:px-16">
 
         <div className="flex items-center gap-4 text-white">
-          <img className="w-10" src={Logo} alt="" />
+         <NavLink to={'/'}><img className="w-10 cursor-pointer" src={Logo} alt="" /></NavLink>
           <i className="fa-solid fa-bars block text-xl md:hidden cursor-pointer" onClick={(e)=>{
             e.stopPropagation()
              setMenuOpen(true)
